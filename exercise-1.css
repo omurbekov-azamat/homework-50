@@ -1,0 +1,17 @@
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.box {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px red;
+  width: 300px;
+  padding: 20px;
+}
