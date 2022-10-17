@@ -85,11 +85,26 @@
             </main>
         );
     };
+    const Footer = () => {
+        return (
+            <footer className="footer bg-danger bg-gradient px-2 d-flex justify-content-between opacity-75 text-white">
+                <div>
+                    <p className="mb-0">Способы оплаты:</p>
+                    <ul><li className="d-inline-block me-4"><a className="text-white" href="#">Visa</a></li><li className="d-inline-block"><a className="text-white" href="#">MasterCard</a></li></ul>
+                </div>
+                <div>
+                    <p className="mb-0">Контакты:</p>
+                    <ul><li className="d-inline-block me-4">+996(312)012345</li><li className="d-inline-block">+996(312)012345</li></ul>
+                </div>
+            </footer>
+        );
+    };
 
     const app = (
         <React.Fragment>
             <Header/>
             <div className="d-flex"><Sidebar/><Main/></div>
+            <Footer/>
         </React.Fragment>
     );
     ReactDOM.createRoot(container).render(app);
