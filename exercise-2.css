@@ -9,3 +9,9 @@ body {
 .header {
     width: 1179px;
 }
+.sidebar {
+    width: 280px;
+}
+.main {
+    width: 875px;
+}

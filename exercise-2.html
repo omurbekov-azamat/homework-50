@@ -36,10 +36,60 @@
             </header>
         );
     };
+    const Sidebar = () => {
+        return (
+            <aside className="sidebar me-4">
+                <ul className="p-0">
+                    <li className="d-inline-block me-2"><a className="text-decoration-none text-dark" href="#">Главная</a></li>
+                    <li className="d-inline-block"><a className="text-decoration-none text-secondary" href="#">Рецепты</a></li>
+                </ul>
+                <nav>
+                    <a className="d-block text-decoration-none p-3 border-bottom bg-white text-dark" href="#">Закваски для сыра</a>
+                    <a className="d-block text-decoration-none p-3 border-bottom bg-white text-dark" href="#">Ферменты для сыра</a>
+                    <a className="d-block text-decoration-none p-3 border-bottom bg-white text-dark" href="#">Хлористый кальций</a>
+                    <a className="d-block text-decoration-none p-3 border-bottom bg-white text-dark" href="#">Плесень для сыра</a>
+                    <a className="d-block text-decoration-none p-3 border-bottom bg-white text-dark" href="#">Кисломолочные закваски</a>
+                    <a className="d-block text-decoration-none p-3 border-bottom bg-white text-dark" href="#">Красители для сыра</a>
+                    <a className="d-block text-decoration-none p-3 border-bottom bg-white text-dark" href="#">Специи для сыра</a>
+                </nav>
+            </aside>
+        );
+    };
+    const Main = () => {
+        return (
+            <main className="main pt-4 text-center">
+                <h1 className="section__title title text-uppercase text-danger">рецепты сыров</h1>
+                <div className="row m-0 text-white">
+                    <div className="col me-3 bg-success rounded-4 p-2 opacity-75">
+                        <p>Молодые сыры</p>
+                        <a href="#">Смотреть</a>
+                        <p>Сырная тарелка</p>
+                        <p>Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов...</p>
+                        <a href="#">Читать далее</a>
+                    </div>
+                    <div className="col me-3 bg-warning rounded-4 p-2 opacity-75">
+                        <p>Полутвердые сыры</p>
+                        <a href="#">Смотреть</a>
+                        <p>Сырная диета</p>
+                        <p>Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов...</p>
+                        <a href="#">Читать далее</a>
+                    </div>
+                    <div className="col me-3 bg-info rounded-4 p-2 opacity-75">
+                        <p>Рассольные сыры</p>
+                        <a href="#">Смотреть</a>
+                        <p>Откуда в сыре дырки?</p>
+                        <p>Особенно характерно наличие дырочек разных размеров в структуре швейцарских сортов...</p>
+                        <a href="#">Читать далее</a>
+                    </div>
+                </div>
+            </main>
+        );
+    };
 
     const app = (
         <React.Fragment>
             <Header/>
+            <div className="d-flex"><Sidebar/><Main/></div>
         </React.Fragment>
     );
     ReactDOM.createRoot(container).render(app);
