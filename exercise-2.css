@@ -1,0 +1,11 @@
+body {
+    background: #fdf7df;
+}
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header {
+    width: 1179px;
+}

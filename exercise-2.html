@@ -13,8 +13,36 @@
     <link rel="stylesheet" href="exercise-2.css">
 </head>
 <body>
-<div id="container"></div>
+<div id="container" class="container"></div>
 <script type="text/babel">
+    const container = document.getElementById('container');
+    const Header = () => {
+        return (
+            <header className="header border-bottom mb-3 navbar navbar-expand-lg py-4">
+                <a className="navbar-brand px-4 bg-warning me-4 text-uppercase rounded-circle border border-warning" href="#">Cheese</a>
+                <div className="ps-4 collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item"><a className="nav-link active" aria-current="page" href="#">Рецепты</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#">Доставка и оплата</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#">Калькулятор cыродела</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#">Отзывы</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#">Контакты</a></li>
+                    </ul>
+                    <form className="d-flex">
+                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button className="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </header>
+        );
+    };
+
+    const app = (
+        <React.Fragment>
+            <Header/>
+        </React.Fragment>
+    );
+    ReactDOM.createRoot(container).render(app);
 </script>
 </body>
 </html>
